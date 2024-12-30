@@ -1,0 +1,37 @@
+###(What are data structures)
+
+A program is a set of instructions which performs operations on data.without data instructions cannot be performed.So data is a important part of 
+the program. So when the program is dealing with the data, how it will organize the data in the main memory.That is what data structures.The way 
+you organize the data in the main memory during execution time of a program.
+
+###(List of data structures and algorithm techniques)
+
+    1.Arrays
+    2.Matrices
+    3.Linked List
+    4.Stack
+    5.Queues
+    6.Trees
+    7.Graph
+    8.Hashing
+    9.Recursion
+    10.Sortings
+
+
+    ##(Physical data structures)
+
+    These are the data structures they defines how data is arranged in memory.
+
+        1.Arrays
+        2.Matrices
+        3.Linked List
+
+    ##(Logical data structures)
+
+    These are the data structures that defines how the data can be utilized,how the arrangement is and how it should be utilized.
+
+        1.Stack
+        2.Queues
+        3.Trees
+        4.Graph
+        5.Hashing

@@ -1,0 +1,128 @@
+## The data structures can be basically categorized into two types :-
+
+####    Physical data structures
+
+    1.Array
+    2.Linked List
+
+####    Logical data structures
+
+    ##Linear data structure
+        1.Stack
+        2.Queue
+
+    ##Non Linear data structure
+        3.Tree
+        4.Graph
+
+    ##Tabular data strucutre 
+        5.Hash Table
+
+
+#### Physical data structures
+
+    Physical data structures are actually meant for storing the data,they will hold the data,they will actually store the data in the memory.
+    Then you have the list of values you may be performing operations like, inserting more values or deleting existing values or searching for
+    values and many more operation.
+
+    1.Array:-
+        1) Default data structure in most programming languages like C,C++,..
+        2) Collection of Contiguous(Continous) memory locations
+        3) The array will fixed size, once it created of some size, then the size can't be increased or decreased. (only applicable for static arrays).
+        4) The arrays which are allocated through dynamic memory allocation can be adjustable with size.
+        5) Each continous locations are named with indices and the corresponding addresses is calculated through (LEA instruction)
+        6) Array can be allocated in both stack and heap segment
+        7) Length of the data to be stored is known then you can use the array.
+
+    2.Linked List:-
+        1) This is a dynamic data structure, and it is a collection of nodes.
+        2) Where each node contains data and reference to next node.
+        3) The length of this list can grow and reduce dynamically. so it is having variable length.
+        4) The Linked list can be only allocated in heap segment. Referenced through a pointer allocated in stack.
+        5) In linked list nodes(elements) are not arranged in continous memory locations. Instead they are scattered across the available(free) heap memory region.
+        6) Length of the data to be stored is unknown then you can use the linked list.
+        7) The start node marked as head and stored to traverse the linked list.
+        8) The end of the linked list is marked as NULL.
+
+
+#### Logical data structures
+     How will you want to utiltize those values?
+     How you will be performing the operation, insertion or deletion?
+     what is the discipline that you are going to follow?
+     That discipline is defined by these data structures.
+     To implement these data structures we either use array or linked list.
+
+    ## Linear data structure
+        1. Stack:-
+            1) This works on the discipline that is LIFO (Last In First Out).
+
+        2. Queue:-
+            1) This works on the discipline that is FIFO (First In First Out).
+
+    ## Non-linear data structure 
+        3. Trees:-
+            1) This will be organized like a hierarchy, and this is a collection of nodes and links between the nodes.
+
+        4. Graph:-
+            1) A collection of nodes (vertices) connected by edges, used to model relationships and networks.
+
+    ## Tabular data structure
+        5. Hash table:-
+            1) A data structure that maps keys to values using a hash function for efficient lookups.
+
+
+#### (ADT) Abstract Data Type
+
+    1.Data Type:-
+        1) How the data type is represented?
+        2) What are the Operations that you allow on the data?
+
+        For Example:- 
+
+        1.Representation:
+            Integer (int) data type consumes 4 bytes. For signed integer 1-bit on msb is reserved for denote sign of the integer. Meanwhile unsigned
+            integers all the 32-bits are used to represent the data.
+
+        2.Operation:-
+            Arithmetic operations are allowed in integer data type, increment, decrement and relational operators are allowed
+
+    
+    2.Abstract:- 
+        Which means hiding internal details
+
+            For Example:- 
+                How these above operations are performed in the data type in its binary form is abstract.
+
+    These example is actually primitive data types, which describes the abstract data type.
+
+    The term Abstract is related to Object oriented programming (OOP). Using the classes we can define our own data types, that are abstract.
+    This means, without knowing internal details we can use them.
+
+
+    3.Abstract data type:-
+        List in python like languages can be taken as example, which are abstract data type implemented through any of the physical data structures.
+
+        1.Representation of data:-
+                1.Space for storing elements
+                2.Capacity
+                3.Size
+
+        2.Operations:
+                1.Add
+                2.Remove
+                3.Search
+
+        The internal details like how the data is represented using what physical data structure is totally hidden using classes.
+
+
+#### Time Complexity
+    1) The amount of time required to complete the task.
+    2) The time complexity basically depends on the procedure that you are adapting and what algorithm does that procedure is using to compute the result.
+    
+    O(N)
+    1) If the array is processed fully -> O(N)
+    2) For each array elements you are processing entire array elements -> O(N^2)
+    3) If the array is successively divided and processed then the complexity is -> O(log2(N))
+
+#### Space Complexity
+    1) The amount of space consumed the program in the main memory. 
