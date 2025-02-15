@@ -1,0 +1,52 @@
+### Recursion
+
+ The function calling itself is known as recursive function.
+
+1) Recursive function consist of two parts:-
+	1) Recursive call
+	2) Base condition
+
+
+## Phases of recursive function:-
+	1) Ascending Phase (Calling Phase)
+	2) Descending Phase (Unwinding Phase)
+
+
+## Static (Global) and local variables
+	1) Static variables are global variables, unlike local variables they are not redefined again and again, their value remains same across all functions calls.
+	2) Local variables were redefined again and again for each function call.
+
+## Types of recursion:-
+	1) Tail recursion
+	2) Head recursion
+	3) Tree recursion
+	4) Indirect recursion
+	5) Nested recursion
+
+	# Tail recursion:-
+		1) When a function contains the recursive call as the last statement of the function then it is called as Tail recursion. In the descending phase(unwinding phase) of this function , there will be no statements to execute.
+
+		2) Some compilers will try to convert the tail recursion into loop in the object code to reduce space complexity.
+
+	# Head recursion:-
+		1) When a function contains the recursive call as first statement of the function then it is called as Head recursion and this type of function has all statements that need to executed at Descending phase (unwinding phase).
+ 
+	# Tree recursion:-
+		1) If a recursive function calling itself more than one time, then it is called Tree recursion.
+
+	# Indirect recursion:-
+		1) Two or more functions call each other in a recursive fashion.
+
+	# Nested recursion:-
+		1) The recursive call contains recursive call as parameter.
+
+
+## Excessive recursion:-
+
+	If a recursive function is called multiple times for computing the same value, then it is called excessive recursion.
+	
+## Memoization:-
+
+	To avoid excessive recursion, technique called memoization is used. Memoization is a technique which stores the computed value in globally , to reduce the recomputation of the same value again.
+
+
