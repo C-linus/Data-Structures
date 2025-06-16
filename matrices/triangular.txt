@@ -1,0 +1,66 @@
+#### Triangular Matrix
+
+
+
+### Lower Triangular Matrix
+2-D Representation:-
+[
+    [a11,0,0,0,0]
+    [a21,a22,0,0,0]
+    [a31,a32,a33,0,0]
+    [a41,a42,a43,a44,0]
+    [a51,a52,a53,a54,a55]
+]
+
+1-D Representation:-
+
+## Row Major Mapping
+A[a11,a21,a22,a31,a32,a33,a41,a42,a43,a44,a51,a52,a53,a54,a55]
+
+Accessing Elements Example:-
+
+    1.Index(A[4][3]) = [1 + 2 + 3] + 2 = 8
+    2.Index(A[5][4]) = [1 + 2 + 3 + 4] + 3 = 13
+    3.Index(A[i][j]) = i(i -1)/ 2 + j - 1
+
+## Column Major Mapping
+A[a11,a21,a31,a41,a51,a22,a32,a42,a52,a33,a43,a53,a44,a54,a55]
+
+Accessing Elements Example:-
+
+    1.Index(A[4][4]) = [5 + 4 + 3] + 0 = 12
+    2.Index(A[5][4]) = [5 + 4 + 3] + 1 = 13
+    3.Index(A[5][3]) = [5 + 4] + 2 = 11
+    4.Index(A[i][j]) = [n + n-1 + n-2 + ... + n - (j-2)] + (i-j)
+                     = [n(j-1) - [1 + 2 + 3 + ... j -2]] + (i -j)
+                     = [n(j-1) - (j-2)(j-1)/2] + (i-j)
+
+### Upper Triangular Matrix
+2-D Representation:-
+[
+    [a11,a12,a13,a14,a15]
+    [0,a22,a23,a24,a25]
+    [0,0,a33,a34,a35]
+    [0,0,0,a44,a45]
+    [0,0,0,0,a55]
+]
+
+1-D Representation:-
+
+## Row Major Mapping
+A[a11,a12,a13,a14,a15,a22,a23,a24,a25,a33,a34,a35,a44,a45,a55]
+
+Accessing Elements Example:-
+
+    1.Index(A[4][5]) = [5 + 4 + 3] + 1 = 13
+    2.Index(A[i][j]) = [n + n-1 + n-2 + ... + n - (i-2)]
+                     = [(i-1)n - (i-2)(i-1)/2] + (j-i)
+
+## Column Major Mapping
+A[a11,a12,a22,a13,a23,a33,a14,a24,a34,a44,a15,a25,a35,a45,a55]
+
+Accessing Elements Example:-
+
+    1.Index(A[4][5]) = [1 + 2 + 3 + 4] + 3 = 13
+    2.Index(A[i][j]) = [1 + 2 + 3 ... + j - 1] + i - 1
+                     = [j(j - 1)/2] + i - 1
