@@ -1,0 +1,37 @@
+#### Sparse Matrix
+
+Matrix [8][9]
+[
+    [0,0,0,0,0,0,0,3,0]
+    [0,0,8,0,0,1,0,0,0]
+    [0,0,0,0,0,0,0,0,0]
+    [4,0,0,0,0,0,0,0,0]
+    [0,0,2,0,0,0,0,0,0]
+    [0,0,0,6,0,0,0,0,0]
+    [0,9,0,0,5,0,0,0,0]
+]
+
+1. Sparse Matrix is a matrix which contains mostly zero elements and few non-zero elements.
+2. Storing the entire matrix with zero values waste the storage & processing time.
+
+That's why we use one of these two methods to store sparse matrix:-
+
+        1.Coordinate List / 3-column Rep
+        2.Compressed Sparse Row
+
+### Coordinate List  | 3-column Rep
+
+    1.For every non-zero elements we need 3 columns (row-no,col-no,element-value) as a tuple.
+
+### Compressed Sparse Row
+
+    1.In this method sparse matrix is represented using 3-arrays.
+        1. Array-1 for non-zero elements (row-wise)
+            example:-
+                A[3,8,10,4,2,6,9,5]
+        2. Array-2, cummualtive for each row, (no of elements in each row will be added to the no of elements in the next row).
+            example:-
+                IA[0,1,3,3,4,4,5,6,8]
+        3.Array-3 stores the column value of each non-zero elements
+            example:-
+                JA[8,3,6,1,3,4,2,5]
