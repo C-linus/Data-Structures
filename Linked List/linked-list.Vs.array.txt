@@ -1,0 +1,10 @@
+#### Linked List .Vs. Array
+
+### Linked List
+	1. Linked list nodes are allocated, whenever there is need to add a new node, which is storage efficient, compared to allocating bunch of bytes in (arrays).
+	2. In linked list nodes are allocated non-contiguous from the heap unlike array.
+
+### Problem with Arrays
+
+	1. Static Arrays are of fixed size and Dynamic Arrays can be grow, but if reallocation fails it leads to data loss.
+	
